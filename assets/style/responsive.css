@@ -1,0 +1,141 @@
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
+	/*responsive footer*/
+	.footer-body div.info{
+		width: 80%;
+		text-align: center;
+		margin:16px auto;
+		/*padding: 0 22px;*/
+		box-sizing: border-box;
+	}
+	/*footer*/
+	.my-navbar{
+		justify-content: space-between;
+	}
+	.mynavbar-content{
+		flex-direction: column;
+		position: absolute;
+		top:60px;
+		left:-285px;
+		background-color:#26d0c9;
+		
+		width:50%;
+		animation: slide-out 0.5s ease;
+		animation-fill-mode: forwards;
+		float: right;
+		overflow-y: auto;
+	}
+	.content .container .col.mb-4{
+		padding: 8px;
+	}
+	section#mahasiswa div.img-mahasiswa{
+		display: none;
+	}
+	section#mahasiswa div.col-sm-12{
+		padding: 16px auto;
+		box-sizing: border-box;
+	}
+	#tag-menu:checked ~ div.mynavbar-content {
+		animation: slide-in 0.5s ease;
+		animation-fill-mode: forwards;
+	}
+	@keyframes slide-in {
+	 from {left: -285px;}
+	 to {left: 0;}
+	}
+
+	@keyframes slide-out {
+	 from {left: 0;}
+	 to {left: -285px;}
+	}
+
+	.mynavbar-list{
+		flex-direction: column;
+	}
+	.fa.fa-bars{
+		display: block;
+	}
+	.menu-bar {
+		display: block;
+		color:#FFF;
+		font-size:25px;
+		cursor:pointer;
+		padding:10px 12px;
+		margin-left:10px;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+
+	/*.menu-bar:hover {
+		background-color:rgba(0, 0, 0, 0.1);
+		border-radius:50px;
+	}*/
+
+	#tag-menu {
+		display:none;
+		float: right;
+	}
+	div.navbar-right{
+		margin-right: 30px;
+	}
+	
+	.dropdown-btn {
+	    justify-content: flex-start;
+	  }
+
+	.dropdown-list {
+	   	position: relative;
+	 }
+
+	.dropdown .dropdown-list .dropdown {
+	    display: none;
+	}
+	.mynavbar-content ul li{
+		padding:18px;
+		text-decoration:none;
+		display:block;
+		color:#FFF;
+		border-top:1px solid #91F8FE;
+	}
+
+	.mynavbar-content .logo{
+		font-weight: bold;
+		font-size: 35px;
+		margin-bottom: 20px;
+		padding: 10px 0;
+	}
+
+	/*style responsive jumbotron*/
+	.jumbotron-fluid{
+		height: 30vh;
+	}
+	.jumbotron-fluid .container img{
+		display: none;
+	}
+
+	/*responsive slider*/
+	.slider .gallery {
+	  padding-bottom: 80%;
+	  /*height: 350px;*/
+	}
+	/*#slider .flickity-viewport {
+	  position: absolute;
+	  width: 100%;
+	}*/
+
+	/*******	
+
+	responsive artikel
+
+	********/
+
+	#content{
+		margin-top: 90px;
+	}
+
+	#sidebar{
+		display: none;
+	}
+}

@@ -1,0 +1,137 @@
+.mybtn {
+	padding: 0.5rem 1rem;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/*************************
+
+navbar
+*************************/
+.my-navbar {
+	display: flex;
+	align-items: center;
+	background-color: #26D0C9;
+	padding: 0.5rem 1rem;
+	position: fixed;
+	width: 100%;
+}
+
+#tag-menu, .fa.fa-bars{
+	display: none;
+}
+.logo {
+	margin-right: 4rem;
+}
+.logo a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-weight: bold;
+}
+.logo a:hover{
+	text-decoration: none;
+	color: white;
+}
+.mynavbar-content {
+	display: flex;
+	padding: 0 1rem;
+}
+.mynavbar-list {
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+	padding: 0;
+	margin:0;
+}
+.mynav-item {
+	padding: 0.5rem 1rem;
+}
+.mynav-link {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.mynav-link:hover{
+	text-decoration: none;
+	color: white;
+}
+/*************************
+
+navbar right
+*************************/
+.navbar-right{
+	margin-left: 30px;
+}
+
+.navbar-right .search-input{
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 3px;
+	
+}
+.navbar-right form{
+	border-radius: 3px;
+	background-color: white;
+
+}
+.btn-search i{
+	color: grey;
+}
+.btn-search:hover {
+	background-color: #eee;
+}
+/*************************
+
+dropdown
+*************************/
+.dropdown {
+	position: relative;
+}
+.dropdown-btn {
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+}
+.dropdown-btn:hover > .dropdown-list{
+	display: block;
+}
+.dropdown-list {
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	border-radius: 3px;
+	width: clamp(160px, 200px, 220px);
+	padding: 0.5rem 0;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+	z-index: 1;
+}
+.dropdown-list.show {
+	display: block;
+}
+.dropdown-list a {
+	text-decoration: none;
+	display: block;
+	padding: 0.5rem 1rem;
+	color: black;
+	text-decoration: none;
+}
+.dropdown-list a:hover {
+	background-color: #dededf;
+	text-decoration: none;
+}
+.dropdown-inner {
+	left: 100%;
+	top: 0;
+}
+.dropdown .dropdown-list .dropdown:hover {
+	background-color: #dededf;
+}
+.dropdown .dropdown-list .dropdown:hover > .dropdown-list {
+	display: block;
+}

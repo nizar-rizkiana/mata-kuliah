@@ -1,0 +1,181 @@
+@font-face{
+	font-family: "PTserif";
+	src:url('../font/PTSerif-Regular.ttf');
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "PTserif";
+}
+body{
+	/*background-color: #EDFAfD;*/
+	/*background-color: #F9FBFE;*/
+	background-color: #fff
+}
+
+hr{
+	margin: 6px 0;
+}
+.card:hover{
+	/*box-shadow: 2px 2px 2px rgba(0,0,0,0.4);*/
+	box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+	transform: scale(1.02);
+	cursor: pointer;
+}
+
+.card-title{
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.gallery .gallery-cell{
+	margin-right: 15px;
+}
+
+.jumbotron-fluid{
+	background-color: #26D0C9;
+	position: relative;
+	height: 80vh;
+	margin-top: 60px;
+}
+
+.jumbotron .bg-wave{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+/*section content*/
+section.content{
+	background-color: rgba(38, 208, 202, 0.5);
+	background-image: url("../img/clip-clip.png");
+}
+.content .container .col.mb-4{
+	padding: 6px;
+}
+
+section#slider{
+	background-color: rgba(38, 208, 202, 0.5);
+	margin-top: 10px;
+}
+/*.card .card-img-top{
+	height: 180px;
+}*/
+
+img.paper-up{
+	position: relative;
+	top: -3px;
+}
+
+/*image profile penulis*/
+#img-penulis{
+	clip-path: circle(50% at 50% 50%);
+	border: 1px solid black;
+}
+
+/*slider*/
+.slider .gallery {
+  padding-bottom: 33.3%;
+}
+
+/* viewport inherit size from carousel */
+.slider .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+.slider .gallery .gallery-cell{
+	height: 90%;
+}
+/*footer*/
+footer{
+	margin-top: 20px;
+}
+footer .footer-body{
+	background-color: rgba(38, 208, 202, 0.5);
+	text-align: center;
+	padding:18px 0 4px 0;
+	box-sizing: border-box;
+}
+
+.footer-body h5{
+	font-weight: bold;
+	margin: 12px 0;
+}
+
+footer .copyright{
+	text-align: center;
+	background-color: #26D0C9;
+	padding: 10px;
+}
+
+.copyright p{
+	font-weight: bold;
+	font-size: 15px;
+	margin:auto 0;
+}
+
+.footer-body .sosmed{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 14px;
+}
+
+.footer-body div.info{
+	width: 35%;
+	text-align: center;
+	margin:16px auto;
+}
+
+
+/*style artikel*/
+#content{
+	margin-top: 70px;
+}
+
+#content .col-md-7{
+	border: 2px solid #eee
+}
+
+.col-md-7 #judul{
+	font-size: 30px;
+	text-transform: capitalize;
+}
+
+.col-md-8 .figure .content-img{
+	width: 100%;
+}
+
+
+.col-md-7 #content-body{
+	font-size: 17px;
+	text-align: justify;
+}
+
+#content #content-image{
+	height: 360px;
+	width: 640px;
+	
+}
+
+/*artikel sidebar*/
+#sidebar ul li .miniside{
+	width: 130px;
+	height: 73px;
+	border-radius: 12px;
+	margin-right: 6px;
+}
+
+/*section mahasiswa*/
+section#mahasiswa{
+	background-color: #b4fac9;
+	margin: 160px 0;
+	box-sizing: border-box;
+}
+
+section#mahasiswa .col-md-6 {
+	padding: 0 24px 24px 24px;
+}

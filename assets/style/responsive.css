@@ -160,14 +160,16 @@
 	/*style navbar*/
 	.my-navbar{
 		justify-content: space-between;
+		/*position: static;*/
 	}
 	.mynavbar-content{
 		flex-direction: column;
+		order: 1;
 		position: absolute;
-		top:60px;
+		top:50px;
 		left:-285px;
 		background-color:#26d0c9;
-		
+	
 		width:50%;
 		animation: slide-out 0.5s ease;
 		animation-fill-mode: forwards;

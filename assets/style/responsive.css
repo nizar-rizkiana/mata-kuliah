@@ -1,113 +1,28 @@
-@media screen and (max-width: 768px){
+
+/*responsive untuk mobile*/
+@media screen and (max-width: 576px){
+	/*setting global*/
 	body{
-		overflow-x: hidden;
+		padding: 0;
+		margin: 0;
 	}
-	/*responsive footer*/
-	.footer-body div.info{
-		width: 80%;
-		text-align: center;
-		margin:16px auto;
-		/*padding: 0 22px;*/
-		box-sizing: border-box;
+	p{
+		font-size: 14px;
+		top: 0;
 	}
-	/*footer*/
-	.my-navbar{
-		justify-content: space-between;
+	a{
+		text-decoration: none;
 	}
-	.mynavbar-content{
-		flex-direction: column;
-		position: absolute;
-		top:60px;
-		left:-285px;
-		background-color:#26d0c9;
-		
-		width:50%;
-		animation: slide-out 0.5s ease;
-		animation-fill-mode: forwards;
-		float: right;
-		overflow-y: auto;
+	button.btn-search{
+		background-color: transparent;
+		border: none;
+		height: 100%;
 	}
-	.content .container .col.mb-4{
-		padding: 8px;
-	}
-	section#mahasiswa div.img-mahasiswa{
-		display: none;
-	}
-	section#mahasiswa div.col-sm-12{
-		padding: 16px auto;
-		box-sizing: border-box;
-	}
-	#tag-menu:checked ~ div.mynavbar-content {
-		animation: slide-in 0.5s ease;
-		animation-fill-mode: forwards;
-	}
-	@keyframes slide-in {
-	 from {left: -285px;}
-	 to {left: 0;}
+	button  .fa.fa-search{
+		opacity: 0.7;
 	}
 
-	@keyframes slide-out {
-	 from {left: 0;}
-	 to {left: -285px;}
-	}
-
-	.mynavbar-list{
-		flex-direction: column;
-	}
-	.fa.fa-bars{
-		display: block;
-	}
-	.menu-bar {
-		display: block;
-		color:#FFF;
-		font-size:25px;
-		cursor:pointer;
-		padding:10px 12px;
-		margin-left:10px;
-		margin-top:5px;
-		margin-bottom:5px;
-	}
-
-	/*.menu-bar:hover {
-		background-color:rgba(0, 0, 0, 0.1);
-		border-radius:50px;
-	}*/
-
-	#tag-menu {
-		display:none;
-		float: right;
-	}
-	div.navbar-right{
-		margin-right: 30px;
-	}
-	
-	.dropdown-btn {
-	    justify-content: flex-start;
-	  }
-
-	.dropdown-list {
-	   	position: relative;
-	 }
-
-	.dropdown .dropdown-list .dropdown {
-	    display: none;
-	}
-	.mynavbar-content ul li{
-		padding:18px;
-		text-decoration:none;
-		display:block;
-		color:#FFF;
-		border-top:1px solid #91F8FE;
-	}
-
-	.mynavbar-content .logo{
-		font-weight: bold;
-		font-size: 35px;
-		margin-bottom: 20px;
-		padding: 10px 0;
-	}
-
-	/*style responsive jumbotron*/
+/*style responsive jumbotron*/
 	.jumbotron-fluid{
 		height: 30vh;
 	}
@@ -120,11 +35,6 @@
 	  padding-bottom: 80%;
 	  /*height: 350px;*/
 	}
-	/*#slider .flickity-viewport {
-	  position: absolute;
-	  width: 100%;
-	}*/
-
 	/*******	
 
 	responsive artikel
@@ -138,154 +48,180 @@
 	#sidebar{
 		display: none;
 	}
-}
 
-/*untuk ukuran mobile*/
-@media screen and (max-width: 576px){
-	body{
-		overflow-x: hidden;
-	}
-	h1{
-		font-size: 24px;
+	/*setting content*/
+	#content{
+		padding: 0 12px;
+		margin-top: 80px;
+
 	}
 
-	p{
+	#content .artikel{
+		padding: 18px;
+	}
+
+	#content .artikel #judul{
+		font-size: 20px;
+		margin-top: 8px;
+	}
+
+	figure .figure-caption{
+		font-size: 12px;
+	}
+	p.uploaded{
+		font-size: 12px;
+	}
+
+	span.nama-penulis{
+		font-size: 12px;
+	}
+	/*slider responsive mobile*/
+	/*slider*/
+	.slider .gallery {
+	  padding-bottom: 110%;
+	}
+
+	/* viewport inherit size from carousel */
+	.slider .flickity-viewport {
+	  position: absolute;
+	  width: 100%;
+	}
+	.slider .gallery .gallery-cell{
+		height: 100%;
+	}
+	/*.slider .gallery {
+	 	height: 100%;
+	}*/
+	ul li a{
 		font-size: 14px;
 	}
 
-	h5{
+	.my-navbar{
+		display: block;
+		height: 90px;
+		padding: 0;
+		transition: top 0.3s;
+	}
+
+	.navbar-left{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 16px 0 16px;
+		margin-bottom: 4px;
+	}
+	.navbar-left .logo a{
 		font-size: 18px;
 	}
 
-	/*style navbar*/
-	.my-navbar{
-		justify-content: space-between;
-		/*position: static;*/
-	}
-	.mynavbar-content{
-		flex-direction: column;
-		order: 1;
+
+	/*form search baru by-nizar*/
+
+	.my-navbar form.form-search{
+		display: block;
 		position: absolute;
-		top:50px;
-		left:-285px;
-		background-color:#26d0c9;
-	
-		width:50%;
-		animation: slide-out 0.5s ease;
-		animation-fill-mode: forwards;
-		float: right;
-		overflow-y: auto;
+		width: 85%;
+		height: 40px;
+		padding: 4px;
+		border-radius: 6px;
+		background-color: white;
+		margin: 8px;
+		top: -50px;
+		transition: top 500ms ease-out;
 	}
-	#tag-menu:checked ~ div.mynavbar-content {
-		animation: slide-in 0.5s ease;
-		animation-fill-mode: forwards;
-	}
-	@keyframes slide-in {
-	 from {left: -285px;}
-	 to {left: 0;}
-	}
-
-	@keyframes slide-out {
-	 from {left: 0;}
-	 to {left: -285px;}
-	}
-
-	.mynavbar-list{
-		flex-direction: column;
-	}
-	.fa.fa-bars{
-		display: block;
-	}
-	.menu-bar {
-		display: block;
-		color:#FFF;
-		font-size:16px;
-		cursor:pointer;
-		padding: 0;
-		margin: 5px 6px;
-		
-	}
-
-	/*.menu-bar:hover {
-		background-color:rgba(0, 0, 0, 0.1);
-		border-radius:50px;
-	}*/
-
 	#tag-menu {
 		display:none;
 		float: right;
 	}
-	div.navbar-right{
-		margin-right: 0;
-		margin-left: 10px;
-		padding-left: 40px;
-		box-sizing: border-box;
+	.my-navbar form.form-search.show{
+		top : 0;
 	}
-
-
+	.my-navbar form.form-search .input-search{
+		width: 90%;
+		height: 100%;
+		font-size: 12px;
+		padding: 4px;
+		border: none;
+		border-radius: 4px;
+		background-color: transparent;
+	}
+	.mybtn {
+		padding: 0.5rem;
+		border-radius: 3px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-color: #fff
+	}
 	
-	.dropdown-btn {
-	    justify-content: flex-start;
-	  }
-
-	.dropdown-list {
-	   	position: relative;
-	 }
-
-	.dropdown .dropdown-list .dropdown {
-	    display: none;
+	.navbar-right{
+		display: none;
 	}
-	.mynavbar-content ul li{
-		padding:18px;
-		text-decoration:none;
-		display:block;
-		color:#FFF;
-		border-top:1px solid #91F8FE;
-	}
-
 	.mynavbar-content .logo{
-		font-weight: bold;
-		font-size: 35px;
-		margin-bottom: 20px;
-		padding: 10px 0;
-	}
-	
-	/*style responsive jumbotron*/
-	.jumbotron-fluid{
-		height: 40vh;
-		margin-top: 50px;
-	}
-
-	.jumbotron-fluid h1{
-		font-size: 26px;
-	}
-
-	.jumbotron-fluid p{
-		font-size: 14px;
-	}
-
-	.jumbotron-fluid img.bg-wave{
-		height: 80px;
-		width: 100%;
-		bottom: -2px;
-	}
-	.jumbotron-fluid .container img{
 		display: none;
 	}
 
-	/*section content*/
+	.mynavbar-content{
+		/*position: absolute;*/
+		display: flex;
+		justify-content: space-around;
+		overflow-x: scroll;
+		align-items: center;
+		margin-top: 8px;
+	}
+	
+	.mynavbar-list {
+	  display: flex;
+	  list-style-type: none;
+	  padding: 0;
+	  margin: 0;
+	  position: relative;
+	  left: 130px;
+	}
 
+	.mynavbar-content .mynavbar-list .mynav-item {
+	  padding: 8px 12px;
+	}
+
+	.mynavbar-list .mynav-item .mynav-link {
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.9);
+	 	text-decoration: none;
+	}
+	.dropdown {
+	  position: relative;
+	}
+
+	.dropdown-btn {
+	  display: flex !important;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+	.dropdown-list {
+	  display: none;
+	  position: relative;
+	  top: 0;
+	  background-color: #fff;
+	  border-radius: 3px;
+	  width: clamp(160px, 200px, 220px);
+	  padding: 0.5rem 0;
+	  border: 1px solid #ccc;
+	  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+	}
+
+	::-webkit-scrollbar{
+		display: none;
+	}
+
+	/*responsive footer*/
+	.footer-body div.info{
+		width: 80%;
+		text-align: center;
+		margin:16px auto;
+		box-sizing: border-box;
+	}
 	.content .container .col.mb-4{
-		padding: 16px;
-	}
-
-	img.paper-up{
-		height: 24px;
-		top: -4px;
-	}
-	img.paper-down{
-		height: 24px;
-		bottom: -6px;
+		padding: 8px;
 	}
 	section#mahasiswa div.img-mahasiswa{
 		display: none;
@@ -293,43 +229,5 @@
 	section#mahasiswa div.col-sm-12{
 		padding: 16px auto;
 		box-sizing: border-box;
-	}
-	
-
-	/*responsive slider*/
-	.slider .gallery {
-	  padding-bottom: 100%;
-	  /*height: 350px;*/
-	}
-	.slider h5{
-		font-size: 16px;
-	}
-	/*#slider .flickity-viewport {
-	  position: absolute;
-	  width: 100%;
-	}*/
-
-	/*responsive footer*/
-	.footer-body div.info{
-		width: 80%;
-		text-align: center;
-		margin:12px auto;
-		/*padding: 0 22px;*/
-		box-sizing: border-box;
-	}
-	
-
-	/*******	
-
-	responsive artikel
-
-	********/
-
-	#content{
-		margin-top: 90px;
-	}
-
-	#sidebar{
-		display: none;
 	}
 }

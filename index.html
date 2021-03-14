@@ -9,10 +9,6 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<!-- my css -->
 		<link rel="stylesheet" href="assets/style/style.css">
-		
-		<!-- slider owl carousel -->
-		<!-- <link rel="stylesheet" href="assets/style/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/style/owl.theme.default.css"> -->
 		<!-- slider flickity -->
 		<link rel="stylesheet" href="assets/style/flikity.css">
 		<!-- style my navbar -->
@@ -22,12 +18,25 @@
 		<title>Kata Dosen</title>
 	</head>
 	<body>
-		<nav class="my-navbar fixed-top">
-			<input type="checkbox" id="tag-menu"/>
-			<label class="fa fa-bars menu-bar" for="tag-menu">&nbsp;&nbsp;Menu</label>
-			<div class="burger">
-				<span></span>
+		<!-- navbar -->
+		<nav class="my-navbar fixed-top" id="navbar">
+			<!-- form search bar baru -->
+			<form action="" class="form-search">
+				<input type="text" placeholder="Search... " class="input-search">
+				<button type="submit" class="btn-search"><i class="fa fa-search text-secondary"></i></button>
+			</form>
+			<div class="navbar-left">
+				<div class="logo">
+					<a href="#">KataDosen</a>
+				</div>
+				
+				<div class="burger">
+					<span></span>
+				</div>
+				
+				<i class="fa fa-search text-white" id="btn-toggle" ></i>
 			</div>
+			
 			<div class="mynavbar-content">
 				<div class="logo">
 					<a href="#">KataDosen</a>
@@ -68,7 +77,7 @@
 					</li>
 					<li class="mynav-item dropdown">
 						<a href="javascript:void(0)" class="mynav-link dropdown-btn"
-							> agama &nbsp; <i class="fa fa-caret-down"></i
+							>agama&nbsp; <i class="fa fa-caret-down"></i
 						></a>
 						<div class="dropdown-list">
 							<a href="#">Link 1</a>
@@ -115,21 +124,24 @@
 				
 				<form action="#" class="form">
 					<input type="text" class="search-input" placeholder="Search ..." />
-					<!-- <button class="mybtn btn-search"><i class="fa fa-search"></i></button> -->
+					<button class="mybtn btn-search"><i class="fa fa-search"></i></button>
 				</form>
 			</div>
+			
+			
 		</nav>
+		<!-- akhir navbar -->
 		
 		<!-- header jumbotron -->
 		<header>
 			<div class="jumbotron jumbotron-fluid">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8 col-sm-12">
+						<div class="col-md-6 col-sm-12">
 							<h1 class="display-4 text-white">KATA DOSEN</h1>
 							<p class="lead">Sebuah Situs Untuk Mencari Materi Yang Pernah Dikatakan Oleh Dosen Seluruh Indonesia</p>
 						</div>
-						<div class="col-md-4 col-sm-12">
+						<div class="col-md-6">
 							<img  src="assets/img/dosen.png" height="300px" alt="">
 						</div>
 					</div>
@@ -423,42 +435,12 @@
 				<p class="text-muted">Copyright &copy; Kata Dosen 2021</p>
 			</div>
 		</footer>
-		<script>
-			const dropdown_btns = document.querySelectorAll(".dropdown-btn");
-		const burger = document.querySelector(".burger");
-			// script my-nav
-		burger.addEventListener("click", () => {
-		const navbar_content = document.querySelector(".navbar-content");
-		burger.classList.toggle("active");
-		navbar_content.classList.toggle("show");
-		});
-		dropdown_btns.forEach((btn) => {
-		btn.addEventListener("click", (e) => {
-		const dropdown = e.currentTarget.nextElementSibling;
-		dropdown.classList.toggle("show");
-		document
-		.querySelectorAll(".dropdown-btn + .dropdown-list")
-		.forEach((dropdown) => {
-		if (dropdown !== e.currentTarget.nextElementSibling) {
-		dropdown.classList.remove("show");
-		}
-		});
-		});
-		});
-		window.onclick = (e) => {
-		if (!e.target.matches(".dropdown-btn")) {
-		const dropdowns = document.querySelectorAll(".dropdown-list");
-		dropdowns.forEach((drpodown) => {
-		drpodown.classList.remove("show");
-		});
-		}
-		};
-		</script>
 		<script src="bootstrap/js/jquery.js"></script>
 		<script src="bootstrap/js/popper.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>
 		<script src="assets/script/flikity.min.js"></script>
 		<script src="assets/script/owl.carousel.js"></script>
+		<script type="text/javascript" src="assets/script/my-script.js"></script>
 		<script>
 		var owl = $('.owl-carousel');
 		owl.owlCarousel({
@@ -477,9 +459,7 @@
 		contain: true,
 		autoPlay:true,
 		pageDots:false,
-		wrapAround:true,
-		adaptiveHeight:true,
-		setGallerySize: false
+		wrapAround:true
 		});
 		</script>
 	</body>

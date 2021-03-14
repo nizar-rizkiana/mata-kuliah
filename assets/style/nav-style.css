@@ -17,8 +17,11 @@ navbar
 	padding: 0.5rem 1rem;
 	position: fixed;
 	width: 100%;
+	
 }
-
+.my-navbar.show-shadow{
+	box-shadow: 0px 3px rgba(0,0,0,0.2);
+}
 #tag-menu, .fa.fa-bars{
 	display: none;
 }
@@ -59,12 +62,20 @@ navbar
 	text-decoration: none;
 	color: white;
 }
+
+.my-navbar form.form-search{
+	display: none;
+}
 /*************************
 
 navbar right
 *************************/
 .navbar-right{
 	margin-left: 30px;
+}
+
+.navbar-left{
+	display: none;
 }
 
 .navbar-right .search-input{

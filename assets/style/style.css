@@ -79,9 +79,14 @@ img.paper-up{
 /*image profile penulis*/
 #img-penulis{
 	clip-path: circle(50% at 50% 50%);
-	border: 1px solid black;
 }
-
+/*baru*/
+.penulis .img-penulis{
+	clip-path: circle(50% at 50% 50%);
+}
+.penulis .nama-penulis{
+	font-size: 12px;
+}
 /*slider*/
 .slider .gallery {
   padding-bottom: 33.3%;

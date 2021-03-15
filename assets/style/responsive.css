@@ -1,4 +1,3 @@
-
 /*responsive untuk mobile*/
 @media screen and (max-width: 576px){
 	/*setting global*/
@@ -8,10 +7,13 @@
 	}
 	p{
 		font-size: 14px;
-		top: 0;
 	}
 	a{
 		text-decoration: none;
+	}
+	/*baru*/
+	h1{
+		font-size: 22px;
 	}
 	button.btn-search{
 		background-color: transparent;
@@ -24,16 +26,47 @@
 
 /*style responsive jumbotron*/
 	.jumbotron-fluid{
-		height: 30vh;
+		height: 40vh;
+		margin-top: 87px;
 	}
-	.jumbotron-fluid .container img{
+	/*baru*/
+	.jumbotron .container .col-md-6.img-jumbo{
 		display: none;
 	}
+	.jumbotron .container .col-md-6 h1{
+		font-size: 26px;
+	}
+	.jumbotron .container .col-md-6 p{
+		font-size: 14px;
+	}
+	.jumbotron .bg-wave{
+		bottom: -2px;
+		height: 60px;
+	}
 
+	/*resposive content home*/
+	/*baru*/
+	img.paper-up{
+		top: -7px;
+		height: 20px;
+	}
+	img.paper-down{
+		position: relative;
+		height: 20px;
+		bottom: -2px;
+	}
+	/*baru card*/
+	.content .container .col.mb-4{
+		padding: 14px 22px;
+	}
 	/*responsive slider*/
 	.slider .gallery {
 	  padding-bottom: 80%;
 	  /*height: 350px;*/
+	}
+	.slider h5{
+		font-size: 16px;
+		/*baru*/
 	}
 	/*******	
 
@@ -220,9 +253,9 @@
 		margin:16px auto;
 		box-sizing: border-box;
 	}
-	.content .container .col.mb-4{
+/*	.content .container .col.mb-4{
 		padding: 8px;
-	}
+	}*/
 	section#mahasiswa div.img-mahasiswa{
 		display: none;
 	}

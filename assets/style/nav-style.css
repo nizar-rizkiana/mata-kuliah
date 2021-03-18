@@ -20,7 +20,7 @@ navbar
 	
 }
 .my-navbar.show-shadow{
-	box-shadow: 0px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 6px 8px rgba(0,0,0,0.2);
 }
 #tag-menu, .fa.fa-bars{
 	display: none;

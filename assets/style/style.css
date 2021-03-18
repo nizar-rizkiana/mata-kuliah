@@ -197,3 +197,13 @@ section#mahasiswa{
 section#mahasiswa .col-md-6 {
 	padding: 0 24px 24px 24px;
 }
+
+/*style kategory/jurusan baru*/
+/*baru*/
+.jumbotron-category{
+	background-color: #26D0C9;
+	height: 50vh;
+	margin-top:60px;
+	border-radius: 0;
+	display: none;
+}

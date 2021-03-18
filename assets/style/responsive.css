@@ -263,4 +263,10 @@
 		padding: 16px auto;
 		box-sizing: border-box;
 	}
+
+	/*style responsive jurusan baru*/
+	section#jurusan{
+		padding: 0 8px;
+		margin-top: 80px;
+	}
 }

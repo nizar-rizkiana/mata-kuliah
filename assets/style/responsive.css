@@ -23,6 +23,17 @@
 	button  .fa.fa-search{
 		opacity: 0.7;
 	}
+	/*baru*/
+	.card-title{
+		font-size: 14px;
+	}
+	.badge{
+		font-size: 12px;
+	}
+	/*baru*/
+	.jumbotron-category .deskripsi-jurusan{
+		text-align: justify;
+	}
 
 /*style responsive jumbotron*/
 	.jumbotron-fluid{
@@ -268,5 +279,23 @@
 	section#jurusan{
 		padding: 0 8px;
 		margin-top: 80px;
+	}
+
+	/* ==================================
+	baru -- style responsive untuk halaman kategori 
+	jurusan  
+	=======================================*/
+	#jurusan .slider .gallery {
+	  padding-bottom: 140%;
+	}
+
+	/* viewport inherit size from carousel */
+	#jurusan .slider .flickity-viewport {
+	  position: absolute;
+	  width: 100%;
+	}
+	
+	#jurusan .slider .gallery .gallery-cell{
+		height: 100%;
 	}
 }

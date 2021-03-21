@@ -9,6 +9,9 @@
 	margin: 0;
 	font-family: "PTserif";
 }
+html{
+	scroll-behavior: smooth;
+}
 body{
 	/*background-color: #EDFAfD;*/
 	/*background-color: #F9FBFE;*/
@@ -111,6 +114,29 @@ footer .footer-body{
 	box-sizing: border-box;
 }
 
+/*baru -- style btn back-to-top*/
+a#btn-up{
+	position: fixed;
+	bottom: -60px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(38, 208, 202, 0.7);
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: bottom 1s ease;
+}
+a#btn-up.show-up{
+	bottom: 20px;
+}
+a#btn-up.show-up:hover{
+	background-color: #26D0C9;
+}
+a#btn-up .angle{
+	color: white;
+	text-align: center;
+}
 .footer-body h5{
 	font-weight: bold;
 	margin: 12px 0;
@@ -205,5 +231,18 @@ section#mahasiswa .col-md-6 {
 	height: 50vh;
 	margin-top:60px;
 	border-radius: 0;
-	display: none;
+	/*display: none;*/
+}
+/*baru*/
+#jurusan .slider .gallery {
+  padding-bottom: 50%;
+}
+
+/* viewport inherit size from carousel */
+#jurusan .slider .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+#jurusan .slider .gallery .gallery-cell{
+	height: 90%;
 }

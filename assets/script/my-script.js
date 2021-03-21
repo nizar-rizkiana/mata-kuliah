@@ -64,10 +64,35 @@ window.onclick = (e) => {
 
 window.onscroll = function() {scFunction()};
 
-function scFunction() {
-  if (document.documentElement.scrollTop > 120) {
+function scFunction(){
+	if (document.documentElement.scrollTop > 120) {
     document.getElementById("navbar").classList.add("show-shadow");
-  }else if (document.documentElement.scrollTop < 80) {
+  }
+  if (document.documentElement.scrollTop < 80) {
   	document.getElementById("navbar").classList.remove("show-shadow");
   }
+  if (document.documentElement.scrollTop > 700){
+		document.getElementById("btn-up").classList.add("show-up");
+	}
+	if (document.documentElement.scrollTop < 700){
+		document.getElementById("btn-up").classList.remove("show-up");
+	}
 }
+// function scFunction() {
+//   if (document.documentElement.scrollTop > 120) {
+//     document.getElementById("navbar").classList.add("show-shadow");
+//   }else if (document.documentElement.scrollTop < 80) {
+//   	document.getElementById("navbar").classList.remove("show-shadow");
+//   }
+
+// }
+// baru --- script btn up
+// window.onscroll = function() {upFunction()};
+
+// function upFunction(){
+// 	if (document.documentElement.scrollTop > 700){
+// 		document.getElementById("btn-up").classList.add("show-up");
+// 	}else if (document.documentElement.scrollTop < 700){
+// 		document.getElementById("btn-up").classList.remove("show-up");
+// 	}
+// }
